@@ -1,3 +1,66 @@
+body {
+  margin: 0; }
 
+/* Header */
+.header {
+  padding: 15px;
+  background-image: url("https://cora.brookes.ac.uk/wp-content/uploads/2021/06/a010-markusspiske-feb19-msp_1902_4971.jpg");
+  color: white;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: center; }
+
+img {
+  width: 100%;
+  display: block; }
+
+/* Navigation bar */
+.navbar-list {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  font-family: "Courier New", Courier, monospace; }
+
+.navbar-list a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+
+.navbar-list a:hover {
+  background-color: #111; }
+
+.navbar-list a:nth-child(-n + 3) {
+  padding: 10px 10px;
+  font-size: 0.8em; }
+
+/* UK flag */
+.flag {
+  width: 30px;
+  height: auto;
+  padding: 10px; }
+
+.flag img {
+  border-radius: 2px; }
+
+@media screen and (min-width: 800px) {
+  .header {
+    font-size: 2em;
+    padding: 30px; }
+
+  .navbar-list a:nth-child(-n + 3) {
+    padding: 14px 20px;
+    font-size: 1.3em; }
+
+  .flag {
+    width: 40px;
+    padding: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
