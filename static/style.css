@@ -1,6 +1,21 @@
 body {
   margin: 0; }
 
+footer {
+  background-color: #333;
+  color: white;
+  font-family: "Lucida Console", monospace;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: small; }
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: dodgerblue; }
+
 /* Header */
 .header {
   padding: 15px;
@@ -25,19 +40,19 @@ img {
   /* Safari */
   position: sticky;
   top: 0;
-  font-family: "Courier New", Courier, monospace; }
+  font-family: "Lucida Console", monospace; }
 
 .navbar-list a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 .navbar-list a:hover {
   background-color: #111; }
 
-.navbar-list a:nth-child(-n + 3) {
+.navbar-list a:nth-child(-n + 4) {
   padding: 10px 10px;
   font-size: 0.8em; }
 
@@ -50,7 +65,64 @@ img {
 .flag img {
   border-radius: 2px; }
 
+/* General content */
+.content-container h1 {
+  margin: 20px auto;
+  font-family: "Lucida Console", monospace;
+  text-align: center; }
+
+.content-container p, .content-container ul {
+  font-size: small; }
+
+/* Contacts */
+#contacts h1 {
+  font-family: "Lucida Console", monospace;
+  text-align: center; }
+
+.contact-container {
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 5px 5px 5px 5px #f2f2f2;
+  border-radius: 5px; }
+
+.contact-container i {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 5px; }
+
+.contact-info {
+  font-family: "Lucida Console", monospace;
+  margin-left: 5px; }
+
+#contacts {
+  padding: 10px;
+  align-items: center; }
+
+.contact-info a {
+  color: black; }
+
+/* Projects */
+#projects {
+  font-family: "Lucida Console", monospace; }
+
+#projects h1, #projects h2 {
+  text-align: center; }
+
+#projects div:nth-child(1) img {
+  width: 250px;
+  height: auto; }
+
+.project-container {
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px #f2f2f2;
+  border-radius: 5px; }
+
 @media screen and (min-width: 800px) {
+  footer {
+    padding: 40px; }
+
+  /* Header */
   .header {
     font-size: 2em;
     padding: 30px; }
@@ -61,6 +133,38 @@ img {
 
   .flag {
     width: 40px;
-    padding: 14px; } }
+    padding: 14px; }
+
+  /* General content */
+  .content-container h1 {
+    font-size: 3em;
+    margin: 40px auto; }
+
+  .content-container p, .content-container ul {
+    font-size: medium; }
+
+  /* Contacts */
+  .contact-container {
+    width: 40%; }
+
+  .contact-container i {
+    font-size: 1.5em; }
+
+  #contacts {
+    margin-bottom: 40px; }
+
+  /* Projects */
+  .project-container {
+    width: 70%;
+    padding: 40px; }
+
+  .project-container img {
+    margin: 50px auto; }
+
+  #hockey-project {
+    margin-top: 100px; }
+
+  .project-container h2 {
+    margin-bottom: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

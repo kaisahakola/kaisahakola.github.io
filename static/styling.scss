@@ -1,10 +1,30 @@
 $text_color_1: white;
+$link_color: dodgerblue;
 $primary_color_1: #333;
 $primary_color_2: #111;
-$monospace_font: 'Courier New', Courier, monospace;
+$primary_color_3: #555;
+$primary_color_4: #65a5ff;
+$font-family: 'Lucida Console', monospace;
 
 body {
     margin: 0;
+}
+
+footer {
+    background-color: $primary_color_1;
+    color: $text_color_1;
+    font-family: $font-family;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: small;
+}
+
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $link_color;
 }
 
 /* Header */
@@ -24,35 +44,9 @@ img {
     display: block;
 }
 
-/* Navigation bar */
+/* Hamburger menu */
 
-.navbar-list {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: $primary_color_1;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    font-family: $monospace_font;
-}
 
-.navbar-list a {
-    float: left;
-    display: block;
-    color: $text_color_1;
-    text-align: center;
-    text-decoration: none;
-}
-
-.navbar-list a:hover {
-    background-color: $primary_color_2;
-}
-
-.navbar-list a:nth-child(-n + 3) {
-    padding: 10px 10px;
-    font-size: 0.8em;
-}
 
 /* UK flag */
 
@@ -66,7 +60,113 @@ img {
     border-radius: 2px;
 }
 
+/* General content */
+
+.content-container h1 {
+    margin: 20px auto;
+    font-family: $font-family;
+    text-align: center;
+}
+
+.content-container p, .content-container ul {
+    font-size: small;
+}
+
+/* Contacts */
+
+#contacts h1 {
+    font-family: $font-family;
+    text-align: center;
+}
+
+.contact-container {
+   margin: 0 auto;
+   width: 90%;
+   box-shadow: 5px 5px 5px 5px #f2f2f2;
+   border-radius: 5px;
+}
+
+.contact-container i {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.contact-info {
+    font-family: $font-family;
+    margin-left: 5px;
+}
+
+#contacts {
+    padding: 10px;
+    align-items: center;
+}
+
+.contact-info a {
+    color: black;
+}
+
+/* Projects */
+
+#projects {
+    font-family: $font-family;
+}
+
+#projects h1 , #projects h2 {
+    text-align: center;
+}
+
+#projects div:nth-child(1) img {
+    width: 250px;
+    height: auto;
+}
+
+.project-container {
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 800px) {
+
+    /* Navigation bar */
+
+    .navbar-list {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $primary_color_1;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        font-family: $font-family;
+    }
+
+    .navbar-list a {
+        display: inline-block;
+        color: $text_color_1;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .navbar-list a:hover {
+        background-color: $primary_color_2;
+    }
+
+    .navbar-list a:nth-child(-n + 4) {
+        padding: 10px 10px;
+        font-size: 0.8em;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 40px;
+    }
+
+    /* Header */
 
     .header {
         font-size: 2em;
@@ -83,4 +183,47 @@ img {
         padding: 14px;
     }
 
+    /* General content */
+
+    .content-container h1 {
+        font-size: 3em;
+        margin: 40px auto;
+    }
+
+    .content-container p, .content-container ul {
+        font-size: medium;
+    }
+
+    /* Contacts */
+
+    .contact-container {
+        width: 40%;
+    }
+
+    .contact-container i {
+        font-size: 1.5em;
+    }
+
+    #contacts {
+        margin-bottom: 40px;
+    }
+
+    /* Projects */
+
+    .project-container {
+        width: 70%;
+        padding: 40px;
+    }
+
+    .project-container img {
+        margin: 50px auto;
+    }
+
+    #hockey-project {
+        margin-top: 100px;
+    }
+
+    .project-container h2 {
+        margin-bottom: 40px;
+    }
 }
