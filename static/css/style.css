@@ -1,170 +1,176 @@
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #1b1b1b;
+  font-family: "Lucida Console", monospace; }
 
-footer {
-  background-color: #333;
-  color: white;
-  font-family: "Lucida Console", monospace;
-  bottom: 0;
-  padding: 10px;
-  text-align: center;
-  margin-top: 50px;
-  font-size: small; }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
-footer a {
+.link {
   text-decoration: none;
   cursor: pointer;
   color: dodgerblue; }
 
-/* Header */
-.header {
-  padding: 15px;
-  background-image: url("https://cora.brookes.ac.uk/wp-content/uploads/2021/06/a010-markusspiske-feb19-msp_1902_4971.jpg");
+footer {
+  background-color: #1b1b1b;
   color: white;
-  position: relative;
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center; }
-
-img {
-  width: 100%;
-  display: block; }
-
-/* Navigation bar */
-.navbar-list {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0;
-  font-family: "Lucida Console", monospace; }
-
-.navbar-list a {
-  display: inline-block;
-  color: white;
+  font-family: "Lucida Console", monospace;
+  padding: 10px;
   text-align: center;
-  text-decoration: none;
-  cursor: pointer; }
+  font-size: small;
+  border-top: 2px solid black;
+  z-index: 2; }
 
-.navbar-list a:hover {
-  background-color: #111; }
+.content {
+  background-color: #252525;
+  color: white;
+  padding: 10px;
+  font-size: small;
+  line-height: 150%; }
 
-.navbar-list a:nth-child(-n + 4) {
-  padding: 10px 10px;
-  font-size: 0.8em; }
+.content h1 {
+  color: #f9d03a;
+  line-height: 150%; }
 
-/* UK flag */
-.flag {
-  width: 30px;
-  height: auto;
-  padding: 10px; }
-
-.flag img {
-  border-radius: 2px; }
-
-/* General content */
-.content-container h1 {
-  margin: 20px auto;
-  font-family: "Lucida Console", monospace;
-  text-align: center; }
-
-.content-container p, .content-container ul {
-  font-size: small; }
-
-/* Contacts */
-#contacts h1 {
-  font-family: "Lucida Console", monospace;
-  text-align: center; }
-
-.contact-container {
-  margin: 0 auto;
+.content img {
   width: 90%;
-  box-shadow: 5px 5px 5px 5px #f2f2f2;
-  border-radius: 5px; }
+  height: auto; }
+
+.content a {
+  color: dodgerblue; }
+
+.content ul {
+  padding-left: 0;
+  list-style-position: inside; }
+
+.content li {
+  color: #60b9e2;
+  list-style-type: none; }
+
+.content li:before {
+  content: "- "; }
+
+.content-container {
+  min-height: 82vh;
+  background-color: #252525; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #1b1b1b; }
+
+.dropdown-btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  background-color: #1b1b1b;
+  font-family: "Lucida Console", monospace;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold; }
+
+.dropdown-project-btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  background-color: #1b1b1b;
+  font-family: "Lucida Console", monospace;
+  padding: 10px;
+  width: 100%; }
+
+.dropdown-btn i, .dropdown-project-btn i {
+  margin-right: 5px; }
+
+.dropdown-content, .dropdown-projects-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #1b1b1b;
+  width: 100%; }
+
+.dropdown-content a:active {
+  background-color: #4e4e4e; }
+
+.dropdown-item, .project-item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white; }
+
+.dropdown-item i {
+  margin-right: 5px; }
+
+.dropdown-item a, .project-item a {
+  text-decoration: none;
+  color: white; }
+
+.project-item i {
+  color: #d75d00;
+  margin-right: 5px; }
+
+.project-item {
+  white-space: nowrap; }
+
+.project-item:hover,
+.dropdown-item:hover,
+.dropdown-btn:hover,
+.dropdown-project-btn:hover {
+  background-color: #4e4e4e; }
 
 .contact-container i {
-  padding: 10px;
-  font-size: 1em;
-  margin-right: 5px; }
+  margin-bottom: 20px;
+  color: white;
+  font-size: small; }
+
+.contact-container {
+  margin-top: 30px; }
 
 .contact-info {
   font-family: "Lucida Console", monospace;
-  margin-left: 5px; }
+  margin-left: 10px; }
 
-#contacts {
-  padding: 10px;
-  align-items: center; }
+.contact-info a:hover {
+  cursor: pointer; }
 
-.contact-info a {
-  color: black; }
+.contact-info:nth-child(-n + 3) {
+  color: #d75d00; }
 
-/* Projects */
-#projects {
-  font-family: "Lucida Console", monospace; }
-
-#projects h1, #projects h2 {
-  text-align: center; }
-
-#projects div:nth-child(1) img {
-  width: 250px;
-  height: auto; }
-
-.project-container {
-  margin: 0 auto;
-  padding: 10px;
-  box-shadow: 5px 5px 5px 5px #f2f2f2;
-  border-radius: 5px; }
+#game-project h3, #hockey-project h3 {
+  color: #d75d00; }
 
 @media screen and (min-width: 800px) {
   footer {
     padding: 40px; }
 
-  /* Header */
-  .header {
-    font-size: 2em;
-    padding: 30px; }
+  .content-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    flex-grow: 1; }
 
-  .navbar-list a:nth-child(-n + 4) {
-    padding: 14px 20px;
-    font-size: 1.3em; }
+  .content {
+    padding: 60px;
+    border-left: 2px solid black;
+    line-height: 200%; }
 
-  .flag {
-    width: 40px;
-    padding: 14px; }
+  .dropdown-content {
+    display: block; }
 
-  /* General content */
-  .content-container h1 {
-    font-size: 3em;
-    margin: 40px auto; }
-
-  .content-container p, .content-container ul {
+  .contact-info {
     font-size: medium; }
 
-  /* Contacts */
-  .contact-container {
-    width: 40%; }
-
   .contact-container i {
-    font-size: 1.5em; }
-
-  #contacts {
-    margin-bottom: 40px; }
-
-  /* Projects */
-  .project-container {
-    width: 70%;
-    padding: 40px; }
-
-  .project-container img {
-    margin: 50px auto; }
-
-  #hockey-project {
-    margin-top: 100px; }
-
-  .project-container h2 {
-    margin-bottom: 40px; } }
+    font-size: 2em;
+    margin-bottom: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,229 +1,247 @@
 $text_color_1: white;
-$link_color: dodgerblue;
-$primary_color_1: #333;
-$primary_color_2: #111;
-$primary_color_3: #555;
-$primary_color_4: #65a5ff;
+$text_color_2: dodgerblue;
+$text_color_3: rgb(215, 93, 0);
+$text_color_4: #60b9e2;
+$text_color_5: #f9d03a;
 $font-family: 'Lucida Console', monospace;
+$dark_mode_1: #1b1b1b;
+$dark_mode_2: #252525;
+$hover: #4e4e4e;
+
+@mixin dropdown-button {
+    color: $text_color_1;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    background-color: $dark_mode_1;
+    font-family: $font-family;
+    padding: 10px;
+    width: 100%;
+}
+
+
+// General for all pages
 
 body {
     margin: 0;
+    background-color: $dark_mode_1;
+    font-family: $font-family;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    color: $text_color_2;
 }
 
 footer {
-    background-color: $primary_color_1;
+    background-color: $dark_mode_1;
     color: $text_color_1;
     font-family: $font-family;
-    bottom: 0;
     padding: 10px;
     text-align: center;
-    margin-top: 50px;
     font-size: small;
+    border-top: 2px solid black;
+    z-index: 2;
 }
 
-footer a {
-    text-decoration: none;
-    cursor: pointer;
-    color: $link_color;
-}
 
-/* Header */
+// Right-side content (main content of the page)
 
-.header {
-    padding: 15px;
-    background-image: url('https://cora.brookes.ac.uk/wp-content/uploads/2021/06/a010-markusspiske-feb19-msp_1902_4971.jpg');
+.content {
+    background-color: $dark_mode_2;
     color: $text_color_1;
-    position: relative;
-    font-family: sans-serif;
-    font-size: 1em;
-    text-align: center;
+    padding: 10px;
+    font-size: small;
+    line-height: 150%;
 }
 
-img {
-    width: 100%;
-    display: block;
+.content h1 {
+    color: $text_color_5;
+    line-height: 150%;
 }
 
-/* Hamburger menu */
-
-
-
-/* UK flag */
-
-.flag {
-    width: 30px;
+.content img {
+    width: 90%;
     height: auto;
+}
+
+.content a {
+    color: $text_color_2;
+}
+
+.content ul {
+    // Make the lists float on the left side with no indent
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.content li {
+    color: $text_color_4;
+    list-style-type: none;
+}
+
+.content li:before {
+    content: "- "; // Dash as a list style type
+}
+
+.content-container {
+    min-height: 82vh;
+    background-color: $dark_mode_2;
+}
+
+
+// Dropdown menu on the left
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: $dark_mode_1;
+}
+
+.dropdown-btn {
+    @include dropdown-button;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.dropdown-project-btn {
+    @include dropdown-button;
+}
+
+.dropdown-btn i, .dropdown-project-btn i {
+    margin-right: 5px;
+}
+
+.dropdown-content, .dropdown-projects-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: $dark_mode_1;
+    width: 100%;
+}
+
+.dropdown-content a:active {
+    background-color: $hover;
+}
+
+.dropdown-item, .project-item {
     padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $text_color_1;
 }
 
-.flag img {
-    border-radius: 2px;
+.dropdown-item i {
+    margin-right: 5px;
 }
 
-/* General content */
-
-.content-container h1 {
-    margin: 20px auto;
-    font-family: $font-family;
-    text-align: center;
+.dropdown-item a, .project-item a {
+    text-decoration: none;
+    color: $text_color_1;
 }
 
-.content-container p, .content-container ul {
+.project-item i {
+    color: $text_color_3;
+    margin-right: 5px;
+}
+
+.project-item {
+    white-space: nowrap;
+}
+
+.project-item:hover, 
+.dropdown-item:hover, 
+.dropdown-btn:hover, 
+.dropdown-project-btn:hover {
+    background-color: $hover;
+}
+
+
+// Contacts
+
+.contact-container i {
+    margin-bottom: 20px;
+    color: $text_color_1;
     font-size: small;
-}
-
-/* Contacts */
-
-#contacts h1 {
-    font-family: $font-family;
-    text-align: center;
 }
 
 .contact-container {
-   margin: 0 auto;
-   width: 90%;
-   box-shadow: 5px 5px 5px 5px #f2f2f2;
-   border-radius: 5px;
-}
-
-.contact-container i {
-    padding: 10px;
-    font-size: 1em;
-    margin-right: 5px;
+    margin-top: 30px;
 }
 
 .contact-info {
     font-family: $font-family;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
-#contacts {
-    padding: 10px;
-    align-items: center;
+.contact-info a:hover {
+    cursor: pointer;
 }
 
-.contact-info a {
-    color: black;
+.contact-info:nth-child(-n + 3) {
+    color: $text_color_3;
 }
 
-/* Projects */
 
-#projects {
-    font-family: $font-family;
+
+// Projects
+
+#game-project h3, #hockey-project h3 {
+    color: $text_color_3;
 }
 
-#projects h1 , #projects h2 {
-    text-align: center;
-}
-
-#projects div:nth-child(1) img {
-    width: 250px;
-    height: auto;
-}
-
-.project-container {
-    margin: 0 auto;
-    padding: 10px;
-    box-shadow: 5px 5px 5px 5px #f2f2f2;
-    border-radius: 5px;
-}
 
 @media screen and (min-width: 800px) {
 
-    /* Navigation bar */
-
-    .navbar-list {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: $primary_color_1;
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
-        font-family: $font-family;
-    }
-
-    .navbar-list a {
-        display: inline-block;
-        color: $text_color_1;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .navbar-list a:hover {
-        background-color: $primary_color_2;
-    }
-
-    .navbar-list a:nth-child(-n + 4) {
-        padding: 10px 10px;
-        font-size: 0.8em;
-    }
-
-    /* Footer */
+    // General for all pages
 
     footer {
         padding: 40px;
     }
+    
 
-    /* Header */
+    // Right-side content (main content of the page)
 
-    .header {
-        font-size: 2em;
-        padding: 30px;
+    .content-container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        flex-grow: 1;
     }
 
-    .navbar-list a:nth-child(-n + 4) {
-        padding: 14px 20px;
-        font-size: 1.3em;
+    .content {
+        padding: 60px;
+        border-left: 2px solid black;
+        line-height: 200%;
     }
 
-    .flag {
-        width: 40px;
-        padding: 14px;
+
+    // Dropdown menu on the left
+
+    .dropdown-content {
+        display: block;
     }
 
-    /* General content */
 
-    .content-container h1 {
-        font-size: 3em;
-        margin: 40px auto;
-    }
+    // Contacts
 
-    .content-container p, .content-container ul {
+    .contact-info {
         font-size: medium;
     }
 
-    /* Contacts */
-
-    .contact-container {
-        width: 40%;
-    }
-
     .contact-container i {
-        font-size: 1.5em;
+        font-size: 2em;
+        margin-bottom: 30px;
     }
 
-    #contacts {
-        margin-bottom: 40px;
-    }
-
-    /* Projects */
-
-    .project-container {
-        width: 70%;
-        padding: 40px;
-    }
-
-    .project-container img {
-        margin: 50px auto;
-    }
-
-    #hockey-project {
-        margin-top: 100px;
-    }
-
-    .project-container h2 {
-        margin-bottom: 40px;
-    }
 }

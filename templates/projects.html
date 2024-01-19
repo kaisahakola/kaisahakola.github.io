@@ -8,105 +8,72 @@
         <title>Kaisa Hakola</title>
     </head>
     <body>
+
+        <div class="wrapper">
+
+            <div class="content-container">
+
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <i class="fas fa-angle-down"></i> Kaisa Hakola
+                    </button>
+                
+                    <div class="dropdown-content" id="menuDropdown">
+                        <div class="dropdown-item">
+                            <a href="../index.html"><i class="fas fa-angle-right"></i> README.md</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="skills.html"><i class="fas fa-angle-right"></i> Taidot</a>
+                        </div>
+                        <button class="dropdown-project-btn" onclick="toggleProjectDropdown()">
+                            <i class="fas fa-angle-right"></i> Projektit
+                        </button>
+                        <div class="dropdown-projects-content" id="projectDropdown">
+                            <div class="project-item">
+                                <a href="game-project.html"><i class="fa-solid fa-code"></i> peliprojekti.html</a>
+                            </div>
+                            <div class="project-item">
+                                <a href="hockey-project.html"><i class="fa-solid fa-code"></i> naiskiekko.html</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="contacts.html"><i class="fas fa-angle-right"></i> Yhteystiedot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="../scripts/dropdown.js"></script>
+
+                <div class="content">
+                    <h1>Projektit</h1>
+    
+                    <p>
+                        Olen kolmannen vuoden tietojenkäsittelyn tradenomi opiskelija Tampereen ammattikorkeakoulussa
+                        ja suuntautunut ohjelmistotuotantoon. Tällä sivulla esittelen itseäni ja hieman myös projekteja,
+                        joita olen ollut mukana tekemässä. 
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum mauris ac 
+                        ligula tincidunt placerat. Ut eget consequat lorem. Orci varius natoque penatibus 
+                        et magnis dis parturient montes, nascetur ridiculus mus. Vivamus purus diam, placerat 
+                        at mauris sit amet, porttitor eleifend elit. Sed eget turpis aliquam, imperdiet nibh id, 
+                        molestie risus. Nulla sed eros finibus, ultricies nunc eget, pharetra neque. Morbi nec ex 
+                        ut libero dictum pharetra vitae vitae est. Aenean pretium accumsan luctus. Vivamus venenatis 
+                        lacus et nibh semper efficitur. In at tellus ut urna auctor laoreet ut a leo.
+                    </p>
+    
+                </div>
+            </div>
+    
+            <footer>
+                <p>
+                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. 
+                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>,  
+                    mikäli kiinnostuit töistäni. Päivitetty 01/2024.
+                </p>
+            </footer>
+        </div>
         
-        <div class="header">
-            <h1>Kaisa Hakola</h1>
-        </div>
-        <div class="navbar-list">
-            <a href="../index.html">Etusivu</a>
-            <a href="skills.html">Taidot</a>
-            <a href="projects.html">Projektit</a>
-            <a href="contacts.html">Yhteystiedot</a>
-            <a style="float:right" class="flag" href="#english"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_the_United_Kingdom_%281806%29.svg" alt="UK flag"></a>
-        </div>
-
-        <div class="content-container" id="projects">
-            <h1>Projektit</h1>
-            <div class="project-container" id="game-project">
-                <h2>Villi Yrttiseikkailu!</h2>
-
-                <h3>Mikä?</h3>
-                <p>
-                    Koulun peliprojekti, jossa rakensimme mobiilipelin. 
-                </p>
-
-                <h3>Milloin?</h3>
-                <p>Keväällä 2022.</p>
-
-                <h3>Miten?</h3>
-                <p>
-                    Tiimimme koostui neljästä henkilöstä, joista osan tehtävänä oli pelin ohjelmointi ja 
-                    osan grafiikoiden tekeminen. Työtehtäväni projektissa oli ohjelmointi sekä 
-                    verkkosivujen rakentaminen. Käytimme pelin ohjelmoinnissa Unitya ja C#-kieltä. 
-                    Verkkosivut on tehty HTML/CSS tekniikoilla.
-                </p>
-
-                <img src="https://webpages.tuni.fi/21tiko2f/puhelin1.png" alt="kuvankaappaus pelistä">
-
-                <h3>Lisätietoa</h3>
-                <p>
-                    Tiimimme voitti Villi Yrttiseikkailu! -pelillä parhaan pelin palkinnon yleisöäänestyksellä.
-                    Peli on ladattavissa Google Play Storessa.
-                </p>
-
-                <h3>Linkkejä</h3>
-                <ul>
-                    <li>
-                        <a href="https://webpages.tuni.fi/21tiko2f/" target="_blank">Pelin kotisivut</a>
-                    </li>
-                    <li>
-                        <a href="https://play.google.com/store/apps/details?id=com.HortaGames.Villiyrttiseikkailu" target="_blank">Google Play Store</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="project-container" id="hockey-project">
-                <h2>Naiskiekko</h2>
-
-                <h3>Mikä?</h3>
-                <p>
-                    Projekti, jossa rakennamme Suomen naisten jääkiekolle omat verkkosivut. Sivuilla on keskitetysti tietoa
-                    suomalaisesta naisten jääkiekosta, esimerkiksi pelituloksia, joukkueiden tietoja sekä sarjataulukoita.
-                    Sivuilta löytyy myös tietoa ulkomaalaisista naisten jääkiekon liigoista. 
-                </p>
-
-                <h3>Milloin?</h3>
-                <p>Syksyllä 2023, jatkuu keväällä 2024.</p>
-
-                <h3>Miten?</h3>
-                <p>
-                    Rakennamme projektitiimissä asiakkaalle verkkosivut, jossa käytämme seuraavia tekniikoita:
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>NodeJS</li>
-                        <li>HTML/CSS</li>
-                        <li>PugJS</li>
-                        <li>PostgreSQL</li>
-                        <li>AWS S3 Bucket</li>
-                    </ul>
-                    Työtehtäväni projektissa on frontend kehitys.
-                </p>
-
-                <img src="../static/images/naiskiekko-ss.png" alt="kuvankaappaus pelistä">
-                <p>
-                    Huom! Kuvassa näkyvät tiedot ovat testidataa, joten ne eivät ole todellisia
-                    peli- tai sarjatuloksia.
-                </p>
-
-                <h3>Linkkejä</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.naiskiekko.fi" target="_blank">Naiskiekko sivut</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <footer>
-            <p>
-                Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. <span><a href="contacts.html">Ota yhteyttä</a></span>,  mikäli kiinnostuit töistäni. 
-                Päivitetty 01/2024.
-            </p>
-        </footer>
+        
     </body>
 </html>

@@ -8,27 +8,62 @@
         <title>Kaisa Hakola</title>
     </head>
     <body>
+
+        <div class="wrapper">
+            <div class="content-container">
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <i class="fas fa-angle-down" id="btn-icon"></i> KAISA HAKOLA
+                    </button>
+                
+                    <div class="dropdown-content" id="menuDropdown">
+                        <a href="index.html" class="dropdown-item">
+                            <i class="fas fa-angle-right"></i> README.md
+                        </a>
+                        <a href="templates/skills.html" class="dropdown-item">
+                            <i class="fas fa-angle-right"></i> Taidot
+                        </a>
+                        <button class="dropdown-project-btn" onclick="toggleProjectDropdown()">
+                            <i class="fas fa-angle-right" id="project-btn-icon"></i> Projektit
+                        </button>
+                        <div class="dropdown-projects-content" id="projectDropdown">
+                            <a href="templates/game-project.html" class="project-item">
+                                <i class="fa-solid fa-code"></i> peliprojekti.html
+                            </a>
+                            <a href="templates/hockey-project.html" class="project-item">
+                                <i class="fa-solid fa-code"></i> naiskiekko.html
+                            </a>
+                        </div>
+                        <a href="templates/contacts.html" class="dropdown-item">
+                            <i class="fas fa-angle-right"></i> Yhteystiedot
+                        </a>
+                    </div>
+                </div>
+
+                <script src="scripts/dropdown.js"></script>
+
         
-        <div class="header">
-            <h1>Kaisa Hakola</h1>
+                <div class="content">
+                    <h1>Kaisa Hakola</h1>
+    
+                    <p>
+                        Olen kolmannen vuoden tietojenkäsittelyn tradenomi opiskelija Tampereen ammattikorkeakoulussa
+                        ja suuntautunut ohjelmistotuotantoon. Tällä sivulla esittelen itseäni ja hieman myös projekteja,
+                        joita olen ollut mukana tekemässä. 
+                    </p>
+    
+                </div>
+            </div>
+    
+            <footer>
+                <p>
+                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. 
+                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>,  
+                    mikäli kiinnostuit töistäni. Päivitetty 01/2024.
+                </p>
+            </footer>
         </div>
-        <div class="navbar-list">
-            <a href="index.html">Etusivu</a>
-            <a href="templates/skills.html">Taidot</a>
-            <a href="templates/projects.html">Projektit</a>
-            <a href="templates/contacts.html">Yhteystiedot</a>
-            <a style="float:right" class="flag" href="#english"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_the_United_Kingdom_%281806%29.svg" alt="UK flag"></a>
-        </div>
+        
+        
     </body>
-
-    <div class="content-container">
-        <h1>Hei!</h1>
-    </div>
-
-    <footer>
-        <p>
-            Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. <span><a href="templates/contacts.html">Ota yhteyttä</a></span>,  mikäli kiinnostuit töistäni. 
-            Päivitetty 01/2024.
-        </p>
-    </footer>
 </html>
