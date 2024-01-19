@@ -41,3 +41,15 @@ function resetDropdownPosition() {
         lastDropdownItem.style.marginTop = "0";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const path = window.location.pathname
+    var projectDropDown = document.getElementById("projectDropdown");
+    var projectButtonIcon = document.getElementById("project-btn-icon")
+
+    if (path === '/templates/game-project.html' || path === '/templates/hockey-project.html') {
+        projectDropDown.style.display = "block"
+        projectButtonIcon.className = "fas fa-angle-down"
+        adjustDropdownPosition(projectDropDown.clientHeight);
+    }
+})

@@ -101,6 +101,10 @@ footer {
 
 // Dropdown menu on the left
 
+#active {
+    background-color: $hover;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
