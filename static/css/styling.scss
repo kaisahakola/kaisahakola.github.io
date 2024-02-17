@@ -248,4 +248,11 @@ footer {
         margin-bottom: 30px;
     }
 
+    // images in mobile app project
+    
+    .img-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
 }

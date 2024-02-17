@@ -29,13 +29,13 @@
                             <i class="fas fa-angle-right" id="project-btn-icon"></i> Projektit
                         </button>
                         <div class="dropdown-projects-content" id="projectDropdown">
-                            <a href="game-project.html" class="project-item" id="active">
+                            <a href="game-project.html" class="project-item">
                                 <i class="fa-solid fa-code"></i> Peliprojekti
                             </a>
                             <a href="hockey-project.html" class="project-item">
                                 <i class="fa-solid fa-code"></i> Naiskiekko
                             </a>
-                            <a href="mobile-app-project.html" class="project-item">
+                            <a href="mobile-app-project.html" class="project-item" id="active">
                                 <i class="fa-solid fa-code"></i> Mobiilisovellukset
                             </a>
                         </div>
@@ -47,49 +47,41 @@
 
                 <script src="../scripts/dropdown.js"></script>
                 
-                <div class="content" id="game-project">
-                    <h1>Villi Yrttiseikkailu!</h1>
+                <div class="content" id="hockey-project">
+                    <h1>iOS ja Android kehitys</h1>
 
                     <h3>Mikä?</h3>
                     <p>
-                        Koulun peliprojekti, jossa rakensimme mobiilipelin. 
+                        Harjoitustyö, johon kuuluu kaksi CRUD-tyylistä mobiilisovellusta. Toinen sovelluksista
+                        on kehitetty Android käyttöjärjestelmälle ja toinen iOS-käyttöjärjestelmälle.
+                        Toiminnallisuus on molemmissa sovelluksissa samanlainen. Sovellus on lista 
+                        yhteyshenkilöitä, joita käyttäjä pystyy muokkaamaan, poistamaan sekä lisäämään uusia
+                        henkilöitä.
                     </p>
 
                     <h3>Milloin?</h3>
-                    <p>Keväällä 2022.</p>
+                    <p>Keväällä 2023.</p>
 
                     <h3>Miten?</h3>
                     <p>
-                        Tiimimme koostui neljästä henkilöstä, joista osan tehtävänä oli pelin ohjelmointi ja 
-                        osan grafiikoiden tekeminen. Työtehtäväni projektissa oli ohjelmointi sekä 
-                        verkkosivujen rakentaminen. Käytimme pelin ohjelmoinnissa Unitya ja C#-kieltä. 
-                        Verkkosivut on tehty HTML/CSS tekniikoilla.
+                        Android sovellus on rakennettu Kotlin kielellä IntelliJ IDEA kehitysympäristössä
+                        ja iOS sovellus Swift kielellä XCode kehitysympäristössä. Sovelluksissa on käytetty
+                        dummyjson.com sivun Users API:a, joten sovelluksen toiminnallisuudet ovat vain 
+                        demonstroivia, eivätkä muutokset tallennu erilliseen backendiin.
                     </p>
 
-                    <img src="https://webpages.tuni.fi/21tiko2f/puhelin1.png" alt="kuvankaappaus pelistä">
-
-                    <h3>Lisätietoa</h3>
-                    <p>
-                        Tiimimme voitti Villi Yrttiseikkailu! -pelillä parhaan pelin palkinnon yleisöäänestyksellä.
-                        Peli on ladattavissa Google Play Storessa.
-                    </p>
-    
-                    <h3>Linkkejä</h3>
-                    <ul>
-                        <li>
-                            <a href="https://webpages.tuni.fi/21tiko2f/" target="_blank" class="link">Pelin kotisivut</a>
-                        </li>
-                        <li>
-                            <a href="https://play.google.com/store/apps/details?id=com.HortaGames.Villiyrttiseikkailu" target="_blank" class="link">Google Play Store</a>
-                        </li>
-                    </ul>
+                    <div class="img-container">
+                        <img src="../static/images/ios-ss.png" alt="kuvankaappaus Android sovelluksesta">
+                        <img src="../static/images/android-ss.png" alt="kuvankaappaus iOS sovelluksesta">
+                    </div>
+                    
                 </div>
             </div>
     
             <footer>
                 <p>
-                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. 
-                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>,  
+                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola.
+                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>, 
                     mikäli kiinnostuit töistäni. Päivitetty 01/2024.
                 </p>
             </footer>
