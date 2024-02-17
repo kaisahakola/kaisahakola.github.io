@@ -1,4 +1,4 @@
-function toggleDropdown() {
+const toggleDropdown = () => {
     var dropdownContent = document.getElementById("menuDropdown");
     var buttonIcon = document.getElementById("btn-icon")
 
@@ -11,7 +11,7 @@ function toggleDropdown() {
     }
 }
 
-function toggleProjectDropdown() {
+const toggleProjectDropdown = () => {
     var projectDropDown = document.getElementById("projectDropdown");
     var projectButtonIcon = document.getElementById("project-btn-icon")
 
@@ -26,7 +26,7 @@ function toggleProjectDropdown() {
     }
 }
 
-function adjustDropdownPosition(dropdownHeight) {
+const adjustDropdownPosition = (dropdownHeight) => {
     var lastDropdownItem = document.querySelector(".dropdown-content .dropdown-item:last-child");
 
     if (lastDropdownItem) {
@@ -34,7 +34,7 @@ function adjustDropdownPosition(dropdownHeight) {
     }
 }
 
-function resetDropdownPosition() {
+const resetDropdownPosition = () => {
     var lastDropdownItem = document.querySelector(".dropdown-content .dropdown-item:last-child");
 
     if (lastDropdownItem) {
@@ -42,12 +42,15 @@ function resetDropdownPosition() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname
     var projectDropDown = document.getElementById("projectDropdown");
     var projectButtonIcon = document.getElementById("project-btn-icon")
 
-    if (path === '/templates/game-project.html' || path === '/templates/hockey-project.html') {
+    if (path === '/documents/game-project.html' 
+        || path === '/documents/hockey-project.html' 
+        || path === '/documents/mobile-app-project.html') {
+            
         projectDropDown.style.display = "block"
         projectButtonIcon.className = "fas fa-angle-down"
         adjustDropdownPosition(projectDropDown.clientHeight);
