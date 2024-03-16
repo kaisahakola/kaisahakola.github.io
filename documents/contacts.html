@@ -4,87 +4,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/2a0425b1cd.js" crossorigin="anonymous"></script>
-        <script src="../scripts/dropdown.js"></script>
         <link rel="stylesheet" href="../static/css/style.css">
         <title>Kaisa Hakola</title>
     </head>
     <body>
+        <div class="contacts">
+            <div class="navbar">
+                <a href="./contacts.html">Contacts</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./about-me.html">About me</a>
+                <a href="../index.html">Home</a>
+            </div>
 
-        <div class="wrapper">
-
-            <div class="content-container">
-
-                <div class="dropdown">
-                    <button class="dropdown-btn" onclick="toggleDropdown()">
-                        <i class="fas fa-angle-down" id="btn-icon"></i> KAISA HAKOLA
-                    </button>
-                
-                    <div class="dropdown-content" id="menuDropdown">
-                        <a href="../index.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> README.md
-                        </a>
-                        <a href="skills.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> Taidot
-                        </a>
-                        <button class="dropdown-project-btn" onclick="toggleProjectDropdown()">
-                            <i class="fas fa-angle-right" id="project-btn-icon"></i> Projektit
-                        </button>
-                        <div class="dropdown-projects-content" id="projectDropdown">
-                            <a href="game-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Peliprojekti
-                            </a>
-                            <a href="hockey-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Naiskiekko
-                            </a>
-                            <a href="mobile-app-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Mobiilisovellukset
-                            </a>
-                        </div>
-                        <a href="contacts.html" class="dropdown-item" id="active">
-                            <i class="fas fa-angle-right"></i> Yhteystiedot
-                        </a>
-                    </div>
+            <div class="contact-container">
+                <div>
+                    <h1>Contact</h1>
+                    <h1>info</h1>
                 </div>
-        
-                <div class="content">
-                    <h1>Yhteystiedot</h1>
-                    <div class="contact-container">
-                        <i class="fa-solid fa-location-dot">
-                            <span class="contact-info">Tampere, Pirkanmaa, Suomi</span>
-                        </i>
-                        <br />
-                        <i class="fa-solid fa-envelope">
-                            <span class="contact-info">kaisahakola00@gmail.com</span>
-                        </i>
-                        <br />
-                        <i class="fa-brands fa-linkedin">
-                            <span class="contact-info">
-                                <a href="https://www.linkedin.com/in/khakola" target="_blank" class="link">
-                                    www.linkedin.com/in/khakola
-                                </a>
-                            </span>
-                        </i>
-                        <br />
-                        <i class="fa-brands fa-github">
-                            <span class="contact-info">
-                                <a href="https://github.com/kaisahakola" target="_blank" class="link">
-                                    github.com/kaisahakola
-                                </a>
-                            </span>
-                        </i>
-                    </div>
+                <div>
+                    <i class="fa-solid fa-location-dot">
+                        <span class="contact-info">Tampere, Pirkanmaa, Suomi</span>
+                    </i>
+                    <br />
+                    <i class="fa-solid fa-envelope">
+                        <span class="contact-info">kaisahakola00@gmail.com</span>
+                    </i>
+                    <br />
+                    <i class="fa-brands fa-linkedin">
+                        <span class="contact-info contact-link">
+                            <a href="https://www.linkedin.com/in/khakola" target="_blank" class="link">
+                                www.linkedin.com/in/khakola
+                            </a>
+                        </span>
+                    </i>
+                    <br />
+                    <i class="fa-brands fa-github">
+                        <span class="contact-info contact-link">
+                            <a href="https://github.com/kaisahakola" target="_blank" class="link">
+                                github.com/kaisahakola
+                            </a>
+                        </span>
+                    </i>
                 </div>
             </div>
-    
-            <footer>
-                <p>
-                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. 
-                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>,  
-                    mikäli kiinnostuit töistäni. Päivitetty 01/2024.
-                </p>
-            </footer>
         </div>
-        
-        
     </body>
 </html>

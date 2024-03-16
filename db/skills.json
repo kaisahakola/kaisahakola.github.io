@@ -1,0 +1,36 @@
+{
+    "skills": [
+        {
+            "name": "js",
+            "text": "JavaScript is one of my most used languages. I have used it in many different web development courses and projects. It might be my favourite coding language."
+        },
+        {
+            "name": "react",
+            "text": "My React journey started with an overwhelming and confusing attempt to make sense of it. But I was left with a curiosity and iterest to learn more, so that's extacly what I did."
+        },
+        {
+            "name": "html",
+            "text": "HTML and CSS where the languages that sparked my love for web development. Seeing concrete results of my coding in a browser excited me a lot. Learning React later on only added on to that excitement."
+        },
+        {
+            "name": "node",
+            "text": "I first learned to use Node.js in a backend development course where we built a backend server and a database for a user to keep track of expenses. I was very excited about the fact that now I could build a whole full stack web page."
+        },
+        {
+            "name": "java",
+            "text": "Java was the first ever coding language that I learned. Even though it's not the language I use the most now, it will always have a special place in my heart."
+        },
+        {
+            "name": "python",
+            "text": "I learned Pyhton by doing a online class as an extra learning experience, but it quickly became one of my favourite languages"
+        },
+        {
+            "name": "c-sharp",
+            "text": "I learned C# in my first year of studying, straight after learing Java. We used it to build and develop a mobile game with Unity. It was challenging to use a whole new language with very little experience over all and perform well in a big and important client project. But eventually I got the hang of it which shows in the end results ;)."
+        },
+        {
+            "name": "git",
+            "text": "I have been using Git with GitHub troughout my whole studies and I feel like I have become relatively fluent with it."
+        }
+    ]
+}

@@ -4,99 +4,76 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/2a0425b1cd.js" crossorigin="anonymous"></script>
-        <script src="../scripts/dropdown.js"></script>
         <link rel="stylesheet" href="../static/css/style.css">
         <title>Kaisa Hakola</title>
     </head>
     <body>
+        <div class="skills">
+            <div class="navbar">
+                <a href="./contacts.html">Contacts</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./about-me.html">About me</a>
+                <a href="../index.html">Home</a>
+            </div>
 
-        <div class="wrapper">
-
-            <div class="content-container">
-
-                <div class="dropdown">
-                    <button class="dropdown-btn" onclick="toggleDropdown()">
-                        <i class="fas fa-angle-down" id="btn-icon"></i> KAISA HAKOLA
-                    </button>
-                
-                    <div class="dropdown-content" id="menuDropdown">
-                        <a href="../index.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> README.md
-                        </a>
-                        <a href="skills.html" class="dropdown-item" id="active">
-                            <i class="fas fa-angle-right"></i> Taidot
-                        </a>
-                        <button class="dropdown-project-btn" onclick="toggleProjectDropdown()">
-                            <i class="fas fa-angle-right" id="project-btn-icon"></i> Projektit
-                        </button>
-                        <div class="dropdown-projects-content" id="projectDropdown">
-                            <a href="game-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Peliprojekti
-                            </a>
-                            <a href="hockey-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Naiskiekko
-                            </a>
-                            <a href="mobile-app-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Mobiilisovellukset
-                            </a>
-                        </div>
-                        <a href="contacts.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> Yhteystiedot
-                        </a>
-                    </div>
+            <div class="skill-container">
+                <div class="skill-header">
+                    <h1>Skills</h1>
                 </div>
-        
-                <div class="content">
-                    <h1>Taidot</h1>
-    
-                    <p>Tässä on lista teknologioista, joita olen oppinut opintojeni aikana käyttämään.</p>
-                    <ul>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
-                        <li>React</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>Swift</li>
-                        <li>Kotlin</li>
-                        <li>Pug</li>
-                        <li>SQL</li>
-                        <li>REST API</li>
-                        <li>Node.js</li>
-                    </ul>
+                
+                <div class="skill-grid">
+                    <div>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="js">JavaScript</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="react">React</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="html">HTML/CSS/SCSS</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="node">Node.js</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="java">Java</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="python">Python</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="c-sharp">C#</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <span id="git">Git</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="skill-text">
+                        <!-- Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum -->
+                    </div>
 
-                    <p>
-                        Hallitsen parhaiten näistä tekniikoista kolme ensimmäistä. Olen aloittanut ohjelmoinnin Javasta
-                        ja käynyt siitä myös olio-ohjelmointi kurssin. Javan kanssa oppimia taitojani olen hyödyntänyt
-                        C#-kielen sekä Kotlinin opiskelussa. C#-kieltä käytimme koulumme 
-                        <span><a href="game-project.html" class="link">peliprojektissa</a></span> ja Kotlinia Android-sovelluksen 
-                        rakentamisessa. Vastaavanlaisen iOS-sovelluksen kehittämiseen käytimme Swift-kieltä. Näiden sovellusprojektien
-                        repositoriot löydät minun 
-                        <span><a href="https://github.com/kaisahakola" class="link" target="_blank">Github sivulta.</a></span>
-                    </p>
-
-                    <p>Tässä on vielä lista muista työkaluista/käsitteistä, jotka ovat minulle tuttuja.</p>
-
-                    <ul>
-                        <li>Github</li>
-                        <li>IntelliJ IDEA</li>
-                        <li>Scrum</li>
-                        <li>Vesiputousmalli</li>
-                        <li>UX/UI Design</li>
-                    </ul>
-    
                 </div>
             </div>
-    
-            <footer>
-                <p>
-                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola. 
-                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>,  
-                    mikäli kiinnostuit töistäni. Päivitetty 01/2024.
-                </p>
-            </footer>
         </div>
-        
-        
+
+        <script src="../scripts/skill.js"></script>
     </body>
 </html>

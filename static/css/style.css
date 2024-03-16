@@ -1,183 +1,355 @@
-body {
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes roll {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes slide {
+  0% {
+    transform: translate(-100px);
+    opacity: 0; }
+  100% {
+    transform: translate(0);
+    opacity: 1; } }
+html, body {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  background-color: #1b1b1b;
-  font-family: "Lucida Console", monospace; }
+  background-color: #27452f;
+  color: white; }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
+.homepage {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  height: 90vh;
+  padding: 20px; }
 
-.link {
+.home-container ul li a {
   text-decoration: none;
-  cursor: pointer;
-  color: dodgerblue; }
+  color: white; }
 
-footer {
-  background-color: #1b1b1b;
-  color: white;
-  font-family: "Lucida Console", monospace;
-  padding: 10px;
-  text-align: center;
-  font-size: small;
-  border-top: 2px solid black;
-  z-index: 2; }
+.home-container ul li a:hover {
+  color: pink; }
 
-.content {
-  background-color: #252525;
-  color: white;
-  padding: 10px;
-  font-size: small;
-  line-height: 150%; }
-
-.content h1 {
-  color: #f9d03a;
-  line-height: 150%; }
-
-.content img {
-  width: 90%;
-  height: auto; }
-
-.content a {
-  color: dodgerblue; }
-
-.content ul {
-  padding-left: 0;
-  list-style-position: inside; }
-
-.content li {
-  color: #60b9e2;
+.home-container ul {
   list-style-type: none; }
 
-.content li:before {
-  content: "- "; }
+.home-container ul li {
+  animation: fade 3s;
+  margin-bottom: 15px; }
 
-.content-container {
-  min-height: 82vh;
-  background-color: #252525; }
-
-#active {
-  background-color: #4e4e4e; }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  background-color: #1b1b1b; }
-
-.dropdown-btn {
-  color: white;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: medium;
-  background-color: #1b1b1b;
-  font-family: "Lucida Console", monospace;
-  padding: 10px;
-  width: 100%;
-  margin-top: 20px;
-  font-weight: bold; }
-
-.dropdown-project-btn {
-  color: white;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-size: medium;
-  background-color: #1b1b1b;
-  font-family: "Lucida Console", monospace;
-  padding: 10px;
-  width: 100%; }
-
-.dropdown-btn i, .dropdown-project-btn i {
-  margin-right: 5px; }
-
-.dropdown-content, .dropdown-projects-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background-color: #1b1b1b;
-  width: 100%; }
-
-.dropdown-content a:active {
-  background-color: #4e4e4e; }
-
-.dropdown-item, .project-item {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+.home-container div h1 {
+  justify-content: center;
   color: white; }
 
-.dropdown-item i {
-  margin-right: 5px; }
+.home-container div h1:first-child {
+  font-size: 3.8em;
+  margin: 0; }
 
-.dropdown-item a, .project-item a {
-  text-decoration: none;
-  color: white; }
+.home-container div h1:last-child {
+  margin-top: 0;
+  font-size: 2em; }
 
-.project-item i {
-  color: #d75d00;
-  margin-right: 5px; }
+.home-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 40% 60%; }
 
-.project-item {
-  white-space: nowrap; }
+.home-container div:first-child {
+  align-self: center;
+  justify-self: center;
+  animation: slide 3s; }
 
-.project-item:hover,
-.dropdown-item:hover,
-.dropdown-btn:hover,
-.dropdown-project-btn:hover {
-  background-color: #4e4e4e; }
+.fa-angle-right {
+  animation: roll 2s; }
 
-.contact-container i {
-  margin-bottom: 20px;
-  color: white;
-  font-size: small; }
+.about-me {
+  height: 95vh; }
+
+.about-me-container {
+  display: grid;
+  grid-template-rows: auto auto; }
+
+.about-me-container div:first-child {
+  animation: slide 3s;
+  text-align: center; }
+
+.about-me-container div:first-child img {
+  border-radius: 8px;
+  width: 80%; }
+
+.about-me-container div:last-child {
+  animation: fade 3s;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  justify-self: center; }
+
+.about-me-container div:last-child h1 {
+  font-family: "Times New Roman", Times, serif; }
+
+.contacts {
+  height: 100vh; }
+
+.contact-container i span {
+  font-family: Arial, Helvetica, sans-serif; }
 
 .contact-container {
-  margin-top: 30px; }
+  margin: 0 auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 60%;
+  height: 95vh; }
+
+.contact-container div:first-child {
+  align-self: center;
+  animation: slide 3s; }
+
+.contact-container div:last-child {
+  animation: fade 3s; }
+
+.contact-link a {
+  text-decoration: none;
+  color: pink; }
 
 .contact-info {
-  font-family: "Lucida Console", monospace;
-  margin-left: 10px; }
+  padding: 10px; }
 
-.contact-info a:hover {
-  cursor: pointer; }
+.contact-container div h1 {
+  margin: 0; }
 
-.contact-info:nth-child(-n + 3) {
-  color: #d75d00; }
+.skills {
+  height: 95vh; }
 
-#game-project h3, #hockey-project h3 {
-  color: #d75d00; }
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 75%;
+  height: 100%; }
 
-@media screen and (min-width: 800px) {
-  footer {
-    padding: 40px; }
+.skill-header {
+  animation: slide 3s;
+  font-size: 3em;
+  align-self: center;
+  justify-self: center; }
 
-  .content-container {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    flex-grow: 1; }
+.skill-grid {
+  animation: fade 3s; }
 
-  .content {
-    padding: 60px;
-    border-left: 2px solid black;
-    line-height: 200%; }
+.skill-grid ul {
+  list-style-type: none; }
 
-  .dropdown-content {
-    display: block; }
+.skill-grid ul li {
+  margin-bottom: 15px; }
 
-  .contact-info {
-    font-size: medium; }
+.skill-grid div:last-child {
+  padding: 20px; }
+
+#skill-text {
+  display: none; }
+
+.skill-grid div:last-child {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.projects {
+  height: 95vh; }
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%; }
+
+.project-container div:first-child {
+  animation: slide 3s;
+  font-size: 3em;
+  align-self: center;
+  justify-self: center; }
+
+.project-container div:last-child {
+  animation: fade 3s; }
+
+.project-container div:last-child ul {
+  list-style-type: none; }
+
+.project-container div:last-child ul li {
+  margin-bottom: 15px; }
+
+.project-container div:last-child ul li a {
+  text-decoration: none;
+  color: white; }
+
+#game-text, #hockey-text, #mobile-text {
+  display: none; }
+
+.content-container div:last-child img {
+  width: 60%;
+  height: auto; }
+
+.content-container div:last-child {
+  animation: fade 3s; }
+
+.content-container div:first-child h1 {
+  animation: slide 3s;
+  font-size: 3em;
+  justify-self: center; }
+
+.content-container div:first-child {
+  width: 100%;
+  align-self: center; }
+
+.content-container div:first-child ul {
+  animation: fade 3s;
+  list-style-type: none; }
+
+.content-container div:first-child ul li a {
+  text-decoration: none;
+  color: white; }
+
+.img-container-mobile-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+@media screen and (min-width: 900px) {
+  .navbar {
+    padding: 40px;
+    border-bottom: 1px solid black;
+    text-align: center; }
+
+  .navbar a {
+    text-decoration: none;
+    display: inline;
+    color: white;
+    float: right;
+    width: 10%;
+    font-size: 1.4em; }
+
+  .navbar a:hover {
+    color: pink; }
+
+  .homepage {
+    height: 95vh;
+    padding: 0; }
+
+  .home-container ul {
+    font-size: 1.3em; }
+
+  .home-container ul li {
+    margin-bottom: 20px; }
+
+  .home-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 90%; }
+
+  .home-container div:first-child {
+    justify-self: center; }
+
+  .home-container div h1:first-child {
+    font-size: 7em; }
+
+  .about-me-container {
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; }
+
+  .about-me-container div:first-child img {
+    width: 300px;
+    height: auto; }
+
+  .about-me-container div:first-child {
+    align-self: center;
+    justify-self: center; }
+
+  .about-me-container div:last-child {
+    padding: 40px;
+    font-size: 1.2em; }
+
+  .about-me-container div:last-child h1 {
+    font-size: 2em; }
+
+  .contact-container {
+    width: 60%; }
 
   .contact-container i {
-    font-size: 2em;
-    margin-bottom: 30px; }
+    margin-bottom: 10px;
+    font-size: 1.5em; }
 
-  .img-container {
+  .contact-container {
+    height: 90vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; }
+
+  .contact-container div:first-child {
+    align-self: center;
+    justify-self: center;
+    font-size: 3em; }
+
+  .contact-container div:last-child {
+    align-self: center; }
+
+  .skills {
+    height: 90vh; }
+
+  .skill-container {
+    height: 100%;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr; }
+
+  .skill-header {
+    justify-self: center;
+    align-self: center; }
+
+  .skill-grid {
+    align-self: center;
     display: grid;
-    grid-template-columns: auto auto; } }
+    grid-template-columns: 33% 67%; }
+
+  .skill-grid div:first-child ul {
+    font-size: 1.3em; }
+
+  .skill-grid div:first-child ul li span:hover {
+    color: pink;
+    cursor: pointer; }
+
+  .skill-grid div:first-child ul li {
+    margin-bottom: 20px; }
+
+  .skill-grid div:last-child {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.3em; }
+
+  .projects {
+    height: 90vh; }
+
+  .project-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr; }
+
+  .project-container div:last-child {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 33% 67%; }
+
+  .project-container div:last-child ul {
+    font-size: 1.3em; }
+
+  .project-container div:last-child ul li span:hover {
+    color: pink;
+    cursor: pointer; }
+
+  .content-container div:first-child ul {
+    font-size: 1.3em; } }
 
 /*# sourceMappingURL=style.css.map */

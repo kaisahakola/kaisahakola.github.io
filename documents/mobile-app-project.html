@@ -10,45 +10,36 @@
     </head>
     <body>
 
-        <div class="wrapper">
+        <div class="project">
+            <div class="navbar">
+                <a href="./contacts.html">Contacts</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./projects.html">Projects</a>
+                <a href="./about-me.html">About me</a>
+                <a href="../index.html">Home</a>
+            </div>
 
             <div class="content-container">
 
-                <div class="dropdown">
-                    <button class="dropdown-btn" onclick="toggleDropdown()">
-                        <i class="fas fa-angle-down" id="btn-icon"></i> KAISA HAKOLA
-                    </button>
-                
-                    <div class="dropdown-content" id="menuDropdown">
-                        <a href="../index.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> README.md
-                        </a>
-                        <a href="skills.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> Taidot
-                        </a>
-                        <button class="dropdown-project-btn" onclick="toggleProjectDropdown()">
-                            <i class="fas fa-angle-right" id="project-btn-icon"></i> Projektit
-                        </button>
-                        <div class="dropdown-projects-content" id="projectDropdown">
-                            <a href="game-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Peliprojekti
+                <div>
+                    <h1>Native Mobile App Development</h1>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a href="./game-project.html">
+                                <span>Villi Yrttiseikkailu!</span>
                             </a>
-                            <a href="hockey-project.html" class="project-item">
-                                <i class="fa-solid fa-code"></i> Naiskiekko
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angle-right"></i>
+                            <a href="./hockey-project.html">
+                                <span>Naiskiekko</span>
                             </a>
-                            <a href="mobile-app-project.html" class="project-item" id="active">
-                                <i class="fa-solid fa-code"></i> Mobiilisovellukset
-                            </a>
-                        </div>
-                        <a href="contacts.html" class="dropdown-item">
-                            <i class="fas fa-angle-right"></i> Yhteystiedot
-                        </a>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
                 
-                <div class="content" id="hockey-project">
-                    <h1>iOS ja Android kehitys</h1>
-
+                <div id="mobile-scroll">
                     <h3>Mikä?</h3>
                     <p>
                         Harjoitustyö, johon kuuluu kaksi CRUD-tyylistä mobiilisovellusta. Toinen sovelluksista
@@ -69,23 +60,13 @@
                         demonstroivia, eivätkä muutokset tallennu erilliseen backendiin.
                     </p>
 
-                    <div class="img-container">
+                    <div class="img-container-mobile-project">
                         <img src="../static/images/ios-ss.png" alt="kuvankaappaus Android sovelluksesta">
                         <img src="../static/images/android-ss.png" alt="kuvankaappaus iOS sovelluksesta">
                     </div>
                     
                 </div>
             </div>
-    
-            <footer>
-                <p>
-                    Tämän verkkosivun omistaa ja on luonut Kaisa Hakola.
-                    <span><a href="templates/contacts.html" class="link">Ota yhteyttä</a></span>, 
-                    mikäli kiinnostuit töistäni. Päivitetty 01/2024.
-                </p>
-            </footer>
         </div>
-        
-        
     </body>
 </html>
