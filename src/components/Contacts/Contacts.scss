@@ -1,0 +1,29 @@
+.Wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    font-size: large;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Icon {
+    width: 40px;
+    height: auto;
+    padding: 5px;
+}
+
+.Text {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
