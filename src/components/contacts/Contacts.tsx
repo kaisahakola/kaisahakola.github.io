@@ -10,21 +10,21 @@ const Contacts = () => {
   return (
     <div className={cls.Wrapper}>
       <h1>Contact info</h1>
-      <div className="Container">
+      <div className={cls.Container}>
         <img className={cls.Icon} src={Email} alt="Email icon" />
         <p className={cls.Text}>{email}</p>
       </div>
-      <div className="Container">
-        <img className="Icon" src={Phone} alt="Phone icon" />
-        <p className="Text">{phone}</p>
+      <div className={cls.Container}>
+        <img className={cls.Icon} src={Phone} alt="Phone icon" />
+        <p className={cls.Text}>{phone}</p>
       </div>
-      <div className="Container">
-        <img className="Icon" src={Github} alt="Github logo" />
-        <p className="Text">{github}</p>
+      <div className={cls.Container}>
+        <img className={cls.Icon} src={Github} alt="Github logo" />
+        <p className={cls.Text}>{github}</p>
       </div>
-      <div className="Container">
-        <img className="Icon" src={Linkdin} alt="LinkedIn logo" />
-        <p className="Text">{linkedIn}</p>
+      <div className={cls.Container}>
+        <img className={cls.Icon} src={Linkdin} alt="LinkedIn logo" />
+        <p className={cls.Text}>{linkedIn}</p>
       </div>
     </div>
   );
