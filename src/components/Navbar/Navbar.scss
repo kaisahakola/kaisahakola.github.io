@@ -1,23 +1,30 @@
+@import "@/shared/styles/_variables.scss";
+
 /* ! Navbar */
 .nav-link:hover,
 .nav-link a:hover {
-  color: blue;
+  color: $font-color-link-hover;
 }
 
 .navbar {
-  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-collapse {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem; 
 }
 
 .nav-link {
-  color: white;
-  margin-left: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-
-.nav-link-brand {
-  color: white;
-  text-decoration: none;
-  margin-left: 30px;
-}
-
-
-

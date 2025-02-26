@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -10,7 +10,7 @@ const Navigation = () => {
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/" className="nav-link-brand">
-            &lt;insert brand here&gt;
+            Kaisa Hakola
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

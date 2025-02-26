@@ -1,16 +1,12 @@
-interface HeaderProps {
-    heading: {
-        header: string
-        subtitle: string
-    }
-}
+import { Heading } from '../../shared/const/Heading';
+import './Header.scss'
 
-const Header = (props: HeaderProps) => {
-    const heading = props.heading
+const Header = () => {
     return(
-        <div>
-            <h1>{heading.header}</h1>
-            <h3>{heading.subtitle}</h3>
+        <div className="header">
+            <p>{Heading.description}</p>
+            <h1>{Heading.header}</h1>
+            <h3>{Heading.subtitle}</h3>
         </div>
     )
 }
