@@ -1,11 +1,13 @@
+@import "@/shared/styles/_variables.scss";
+
 /* ! Navbar */
 .nav-link:hover,
 .nav-link a:hover {
-  color: blue;
+  color: $primary-color;
 }
 
 .navbar {
-  background-color: cornflowerblue;
+  background-color: $secondary-color;
 }
 
 .nav-link {
