@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import ProjectList from "./components/Projects/ProjectList";
+import Header from "./components/header/Header";
+import ProjectList from "./components/projects/ProjectList";
 import Contacts from "./components/Contacts/Contacts";
-import AboutMe from "./components/AboutMe/AboutMe";
+import AboutMe from "./components/aboutMe/AboutMe";
 import Navigation from "./components/Navbar/Navigation";
 import { Route, Routes } from "react-router-dom";
 
