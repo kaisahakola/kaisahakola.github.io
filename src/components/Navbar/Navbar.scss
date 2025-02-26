@@ -3,23 +3,28 @@
 /* ! Navbar */
 .nav-link:hover,
 .nav-link a:hover {
-  color: $primary-color;
+  color: $font-color-link-hover;
 }
 
 .navbar {
-  background-color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-collapse {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 1rem; 
 }
 
 .nav-link {
-  color: white;
-  margin-left: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-
-.nav-link-brand {
-  color: white;
-  text-decoration: none;
-  margin-left: 30px;
-}
-
-
-

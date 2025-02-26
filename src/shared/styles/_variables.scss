@@ -1,8 +1,68 @@
 // Colors 
 
-$primary-color: blue;
-$secondary-color: navy;
+$background-shade-1: #F8F9FB;
+$background-shade-2: #E1ECF7;
+$background-shade-3: #AECBEB;
+$background-shade-4: #83B0E1;
+$background-shade-5: #71A5DE;
 
 
 // Fonts
 
+$font-color-primary: #141414;
+$font-color-secondary: #F8F9FB;
+$font-color-link-hover: blue;
+
+$font-size-s: 12px;
+$font-size-m: 16px;
+$font-size-l: 24px;
+$font-size-xl: 32px;
+$font-size-xxl: 50px;
+
+
+// Breakpoints
+
+$breakpoint-xs: 480px;
+$breakpoint-s: 768px;
+$breakpoint-m: 1024px;
+$breakpoint-l: 1280px;
+
+
+// Borders
+
+$border-radius-sm: 8px;
+$border-radius-l: 20px;
+$border-radius-xl: 100px;
+$border-radius-xxl: 200px;
+
+
+// Animations
+
+@keyframes fade {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    } 
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg); 
+    }
+    100% {
+        transform: rotate(360deg); 
+    } 
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(-100px);
+      opacity: 0; 
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1; 
+    } 
+}
