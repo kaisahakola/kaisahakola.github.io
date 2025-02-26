@@ -1,20 +1,11 @@
-import Project from "./Project";
+// import Project from "./Project";
+import './ProjectList.scss'
 
 const ProjectList = () => {
   return (
-    <>
-      <ul>
-        <li>
-          <Project />
-        </li>
-        <li>
-          <Project />
-        </li>
-        <li>
-          <Project />
-        </li>
-      </ul>
-    </>
+    <div className="wrapper-project-list">
+      <p>Under construction...</p>
+    </div>
   );
 };
 

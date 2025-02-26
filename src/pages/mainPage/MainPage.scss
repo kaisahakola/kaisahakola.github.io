@@ -1,6 +1,6 @@
 @import "@/shared/styles/_variables.scss";
 
-.wrapper {
+.wrapper-main-page {
     text-align: center;
     margin-top: 35%;
 
@@ -14,7 +14,7 @@
 }
 
 @media screen and (min-width: $breakpoint-s) {
-    .wrapper {
+    .wrapper-main-page {
         margin-top: 25%;
 
         img {
@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: $breakpoint-m) {
-    .wrapper {
+    .wrapper-main-page {
         text-align: left;
         margin-top: 10%;
         padding-left: 10rem;
