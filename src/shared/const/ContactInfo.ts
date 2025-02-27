@@ -1,5 +1,5 @@
 export const ContactInfo = {
-    email: "kaisahakola00@gmail.com",
+    email: "hakola.kaisa@icloud.com",
     phone: "0400193396",
     github: "github.com/kaisahakola",
     linkedIn: "www.linkedin.com/in/khakola/"

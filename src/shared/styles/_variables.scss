@@ -9,15 +9,34 @@ $background-shade-5: #71A5DE;
 
 // Fonts
 
+@font-face {
+  font-family: 'Anta';
+  src: url('../../assets/fonts/Anta/Anta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('../../assets/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-primary: 'Archivo';
+$font-family-secondary: 'Anta';
+
 $font-color-primary: #141414;
 $font-color-secondary: #F8F9FB;
-$font-color-link-hover: blue;
+$font-color-link-hover: black;
+$font-color-active: black;
+$font-color-non-active: #626060;
 
-$font-size-s: 12px;
-$font-size-m: 16px;
-$font-size-l: 24px;
-$font-size-xl: 32px;
-$font-size-xxl: 50px;
+$font-size-xs: 16px;
+$font-size-s: 24px;
+$font-size-m: 32px;
+$font-size-l: 48px;
+$font-size-xl: 64px;
 
 
 // Breakpoints
@@ -39,30 +58,42 @@ $border-radius-xxl: 200px;
 // Animations
 
 @keyframes fade {
-    0% {
-      opacity: 0; 
-    }
-    100% {
-      opacity: 1; 
-    } 
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  } 
 }
 
 @keyframes roll {
-    0% {
-        transform: rotate(0deg); 
-    }
-    100% {
-        transform: rotate(360deg); 
-    } 
+  0% {
+      transform: rotate(0deg); 
+  }
+  100% {
+      transform: rotate(360deg); 
+  } 
 }
 
 @keyframes slide {
-    0% {
-      transform: translate(-100px);
-      opacity: 0; 
-    }
-    100% {
-      transform: translate(0);
-      opacity: 1; 
-    } 
+  0% {
+    transform: translate(-100px);
+    opacity: 0; 
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1; 
+  } 
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0; 
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  } 
 }

@@ -4,10 +4,11 @@
     h1 {
         font-size: 5rem;
         animation: slide 2s;
+        font-family: $font-family-secondary;
     }
 
     p {
-        font-size: $font-size-l;
+        font-size: $font-size-m;
     }
 }
 
@@ -15,6 +16,10 @@
     .header {
         h1 {
             font-size: 7rem;
+        }
+
+        p {
+            font-size: $font-size-l;
         }
     }
 }
