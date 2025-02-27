@@ -9,6 +9,23 @@ $background-shade-5: #71A5DE;
 
 // Fonts
 
+@font-face {
+  font-family: 'Anta';
+  src: url('../../assets/fonts/Anta/Anta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('../../assets/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-primary: 'Archivo';
+$font-family-secondary: 'Anta';
+
 $font-color-primary: #141414;
 $font-color-secondary: #F8F9FB;
 $font-color-link-hover: black;
