@@ -1,4 +1,3 @@
-import './AboutMePage.scss'
 import { AboutMe } from '../../shared/const/AboutMe';
 import SecondaryHeader from '../../components/secondaryHeader/SecondaryHeader';
 import MenuItems from '../../components/menuItems/MenuItems';
