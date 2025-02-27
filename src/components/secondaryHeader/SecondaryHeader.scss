@@ -1,0 +1,20 @@
+@import "@/shared/styles/_variables.scss";
+
+.secondary-header {
+    text-align: center;
+    
+    h1 {
+        font-size: $font-size-l;
+        margin-top: 50px;
+        animation: drop 2s;
+    }
+}
+
+@media screen and (min-width: $breakpoint-s) {
+    .secondary-header {
+        h1 {
+            font-size: $font-size-xl;
+            margin-top: 60px;
+        }
+    }
+}

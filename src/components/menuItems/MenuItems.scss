@@ -1,0 +1,52 @@
+@import "@/shared/styles/_variables.scss";
+
+.wrapper-menu-items {
+    padding: 25px;
+}
+
+.item-icon {
+    animation: roll 2s;
+    margin-right: 5px;
+}
+
+.item {
+    display: flex;
+    color: $font-color-non-active;
+
+    p {
+        cursor: pointer;
+    }
+
+    p:hover {
+        color: $font-color-link-hover;
+    }
+}
+
+.item.active {
+    color: $font-color-active;
+}
+
+@media screen and (min-width: $breakpoint-s) {
+    .wrapper-menu-items {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-top: 50px;
+    }
+
+    .item-titles {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: $font-size-s;
+    }
+
+    .item-content {
+        padding-right: 10%;
+    }
+
+}
+
+@media screen and (min-width: $breakpoint-m) {
+    .item-content {
+        padding-right: 15%;
+    }
+}
