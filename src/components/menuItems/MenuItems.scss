@@ -26,6 +26,10 @@
     color: $font-color-active;
 }
 
+.item-titles {
+    font-family: $font-family-secondary;
+}
+
 @media screen and (min-width: $breakpoint-s) {
     .wrapper-menu-items {
         display: grid;
