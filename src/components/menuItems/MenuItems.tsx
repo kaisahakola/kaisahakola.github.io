@@ -1,7 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import './MenuItems.scss';
 import { useState } from 'react';
+import ArrowItems from '../arrowItems/ArrowItem';
 
 interface Props {
     items: Record<string, string[]>;
@@ -20,9 +19,12 @@ const MenuItems = ({ items }: Props) => {
         <div className="wrapper-menu-items">
             <div className='item-titles'>
                 {Object.entries(items).map(([title, text], index) => (
-                    <div key={index} className={`item ${activeItem === title ? 'active' : ''}`}>
-                        <p className='item-icon'><FontAwesomeIcon icon={faAngleRight} /></p>
-                        <p onClick={() => openText(title, text)}>{title}</p>
+                    <div
+                        key={index} 
+                        className={`item ${activeItem === title ? 'active' : ''}`} 
+                        onClick={() => openText(title, text)}
+                    >
+                        <ArrowItems title={title} isActive={activeItem === title} />
                     </div>
                 ))}
             </div>
