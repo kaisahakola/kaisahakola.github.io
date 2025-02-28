@@ -1,0 +1,18 @@
+@import "@/shared/styles/_variables.scss";
+
+.wrapper-link {
+    a {
+        text-decoration: none;
+        color: $font-color-active;
+    }
+
+    a:hover {
+        color: $font-color-non-active;
+    }
+}
+
+@media screen and (min-width: $breakpoint-s) {
+    .wrapper-link {
+        font-size: $font-size-s;
+    }
+}
