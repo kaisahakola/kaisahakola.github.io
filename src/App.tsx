@@ -1,6 +1,6 @@
 import "./App.scss";
 import MainPage from "./pages/mainPage/MainPage.tsx";
-import ProjectList from "./components/projects/ProjectList";
+import ProjectsPage from "./pages/projectsPage/ProjectsPage.tsx";
 import AboutMePage from "./pages/aboutMe/AboutMePage";
 import Navigation from "./components/Navbar/Navigation";
 import { Route, Routes } from "react-router-dom";
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/about-me" element={<AboutMePage />} />
-        <Route path="/projects" element={<ProjectList />} />
+        <Route path="/projects" element={<ProjectsPage title="Projects" />} />
         <Route path="/contacts" element={<ContactsPage title='Contacts' />} />
       </Routes>
     </div>
