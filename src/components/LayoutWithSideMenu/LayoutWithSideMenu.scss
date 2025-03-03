@@ -1,0 +1,35 @@
+@import "@/shared/styles/_variables.scss";
+
+@media screen and (min-width: $breakpoint-s) {
+    .wrapper-layout-with-side-menu {
+        display: grid;
+        grid-template-columns: 30% 70%;
+
+        .layout-titles-container {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .layout-title {
+            .wrapper-arrow-item, .wrapper-arrow-item-active-always {
+                p {
+                    font-size: $font-size-xs;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-m) {
+    .wrapper-layout-with-side-menu {
+        grid-template-columns: 40% 60%;
+
+        .layout-title {
+            .wrapper-arrow-item, .wrapper-arrow-item-active-always {
+                p {
+                    font-size: $font-size-s;
+                }
+            }
+        }
+    }
+}

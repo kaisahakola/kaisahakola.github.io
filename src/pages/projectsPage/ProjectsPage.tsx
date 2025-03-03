@@ -1,4 +1,5 @@
 import SecondaryHeader from "../../components/secondaryHeader/SecondaryHeader";
+import ProjectList from "../../components/projects/ProjectList";
 
 interface ProjectsPageprops {
     title: string;
@@ -6,8 +7,9 @@ interface ProjectsPageprops {
 
 const ProjectsPage = ({ title }: ProjectsPageprops) => {
     return (
-        <div>
+        <div className="wrapper-projects-page">
             <SecondaryHeader title={title} />
+            <ProjectList />
         </div>
     )
 }
