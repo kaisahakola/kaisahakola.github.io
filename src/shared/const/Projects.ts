@@ -18,7 +18,7 @@ export const WildHerb: ProjectItem = {
     ],
     technologies: ["C#", "Unity", "HTML", "CSS"],
     myRole: "Game & Web Developer",
-    description: "A school project where we built a mobile game called Wild Herb Adventure! It was a team project where each team was given a client to develop the game for. Our client was a well-being company called Villipihlaja, which offers various experiences and programme services. This project was a competition between all the teams and our game won the Best Game Award by the public vote. My role was to develop the game and the website.",
+    description: "This was a school project in which we developed a mobile game called Wild Herb Adventure. It was a team-based project, with each team assigned a client for whom to develop the game. Our client was a well-being company named Villipihlaja. Our game was awarded the Best Game title and is available for download on the Google Play Store. This project marked one of my first large-scale team collaborations and had a significant impact on my professional growth. I gained invaluable experience working with a client and was able to demonstrate my programming skills—primarily to myself, but also to my teammates. As one of the two programmers on the project, I contributed to the game development and independently created the website.",
 } as const
 
 export const Hockey: ProjectItem = {
@@ -27,7 +27,7 @@ export const Hockey: ProjectItem = {
     images: [{url: HockeySS, width: "2834px", height: "1342px", type: "desktop"}],
     technologies: ["JavaScript", "Pug", "HTML", "SCSS", "Node.js", "PostgreSQL"],
     myRole: "Frontend Developer",
-    description: "Building a website for women’s ice hockey in Finland. The website has centralized information about Finnish women's ice hockey, for example game results, team information and standings. The website also contains information about foreign women's ice hockey leagues. I was a part of the project when it first started and the website has since been further developed by other developers.",
+    description: "Building a website for women’s ice hockey in Finland. The website has centralized information about Finnish women's ice hockey. I was a part of the project when it first started and the website has since been further developed by other developers. My role consisted of developing the frontend side of the website, but I also got to try backend development at times when my help was needed. During this project I learned to trust my skills and take more responsibility as a member of a team. ",
 } as const
 
 export const AndroidAndIos: ProjectItem = {
@@ -52,7 +52,7 @@ export const AltZone: ProjectItem = {
     ],
     technologies: ["TypeScript", "SCSS", "Next.js", "Headless CMS"],
     myRole: "Lead Web Developer",
-    description: "description",
+    description: "This is a volunteer-driven website development project, and you can find more information about it through the link above. I began working on this project last fall and was promoted to Lead Web Developer in January. In my role, I am responsible for developing the website, conducting code reviews, and managing issue tracking. Stepping out of my comfort zone by accepting the invitation to join the leadership team has been incredibly rewarding. This experience has provided valuable opportunities for growth, and I have significantly enhanced my skills in modern web development.",
     images: [
         {url: AltZoneGallery, width: "2862px", height: "1372px", type: "desktop"}
     ]
