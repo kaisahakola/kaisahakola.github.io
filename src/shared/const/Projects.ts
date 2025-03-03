@@ -41,6 +41,7 @@ export const AndroidAndIos: ProjectItem = {
         {url: Ios, width: "768px", height: "1572px", type: "mobile"}
     ],
     technologies: ["Swift", "Kotlin"],
+    myRole: "Project Creator",
     description: "A project that includes two CRUD-style mobile applications. One of the applications has been developed for the Android operating system and the other for the iOS operating system. The functionality is the same in both applications. The application is a list of contacts where the user can edit, delete and add new contacts.",
 } as const
 

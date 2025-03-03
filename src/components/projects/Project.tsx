@@ -2,6 +2,7 @@ import { ProjectItem } from "../../shared/types/ProjectTypes";
 import LinkWithIcon from "../link/LinkWithIcon";
 import "./Project.scss";
 import ImageContainer from "../ImageContainer/ImageContainer";
+import Container from "../Container/Container";
 
 interface ProjectProps {
   projectInfo: ProjectItem;
@@ -13,35 +14,43 @@ const Project = (props: ProjectProps) => {
     <div className="wrapper-project-item">
       <h2>{projectInfo.title}</h2>
 
-      <div className="link-container">
-        {projectInfo.links.map((link, index) => (
-          <div key={index}>
-            <LinkWithIcon 
-              url={link.url} 
-              iconType={link.url.includes("github") ? "github" : "web"} 
-              text={link.text} />
+      <div className="project-info-container">
+        <Container>
+          <div className="link-container">
+            {projectInfo.links.map((link, index) => (
+              <div key={index}>
+                <LinkWithIcon 
+                  url={link.url} 
+                  iconType={link.url.includes("github") ? "github" : "web"} 
+                  text={link.text} />
+              </div>
+            ))}
           </div>
-        ))}
+        </Container>
+
+        <Container>
+          <div className="technologies-container">
+            <p>Technologies used in this project:</p>
+            <div className="technologies-list">
+              {projectInfo.technologies.map((tech, index) => (
+                <p key={index}>{tech}</p>
+              ))}
+            </div>
+          </div>
+        </Container>
+
+        <Container>
+          <div className="my-role-container">
+            {projectInfo.myRole && (
+              <div>
+                <p>My role:</p>
+                <p className="role">{projectInfo.myRole}</p>
+              </div>
+            )}
+          </div>
+        </Container>
       </div>
       
-      <div className="technologies-container">
-        <p>Technologies used in this project:</p>
-        <div className="technologies-list">
-          {projectInfo.technologies.map((tech, index) => (
-            <p key={index}>{tech}</p>
-          ))}
-        </div>
-      </div>
-
-      <div className="my-role-container">
-        {projectInfo.myRole && (
-          <div>
-            <p>My role:</p>
-            <p className="role">{projectInfo.myRole}</p>
-          </div>
-        )}
-      </div>
-
       <div className="description-container">
         <p>{projectInfo.description}</p>
       </div>
