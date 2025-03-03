@@ -8,6 +8,10 @@
         .layout-titles-container {
             margin-right: auto;
             margin-left: auto;
+            position: sticky;
+            top: 50px;
+            z-index: 100;
+            height: 100vh;
         }
 
         .layout-title {
