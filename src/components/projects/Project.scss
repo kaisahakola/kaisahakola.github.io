@@ -9,22 +9,10 @@
 
 .project-info-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     gap: 10px;
     margin-bottom: 25px;
     max-width: fit-content;
-
-    > .container-wrapper:first-child {
-        grid-column: 1 / span 2;
-    }
-
-    > .container-wrapper:nth-child(2) {
-        grid-column: 1;
-    }
-
-    > .container-wrapper:nth-child(3) {
-        grid-column: 2;
-    }
 }
 
 .project-image {
@@ -59,9 +47,6 @@
 }
 
 .my-role-container {
-    // div {
-    //     line-height: 10px;
-    // }
     .role {
         font-family: $font-family-secondary;
         line-height: 3px;
@@ -72,6 +57,22 @@
     .wrapper-project-item {
         h2 {
             margin: 0 0 25px 0;
+        }
+    }
+
+    .project-info-container {
+        grid-template-columns: auto auto;
+    
+        > .container-wrapper:first-child {
+            grid-column: 1 / span 2;
+        }
+    
+        > .container-wrapper:nth-child(2) {
+            grid-column: 1;
+        }
+    
+        > .container-wrapper:nth-child(3) {
+            grid-column: 2;
         }
     }
 }
