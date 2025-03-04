@@ -1,9 +1,12 @@
 @import "@/shared/styles/_variables.scss";
 
 .wrapper-link {
+    display: flex;
+    align-items: flex-start;
     a {
         text-decoration: none;
         color: $font-color-active;
+        font-size: $font-size-xs;
     }
 
     a:hover {
@@ -14,5 +17,9 @@
 @media screen and (min-width: $breakpoint-s) {
     .wrapper-link {
         font-size: $font-size-xs;
+
+        a {
+            font-size: $font-size-s;
+        }
     }
 }
