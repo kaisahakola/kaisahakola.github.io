@@ -9,15 +9,15 @@ interface ArrowItemsProps {
 
 const ArrowItem = ({ title, isActive }: ArrowItemsProps) => {
     return(
-        <div>
+        <div className='wrapper-arrow-items'>
             {isActive !== undefined && (
-                <div className={`wrapper-arrow-item ${isActive ? 'active' : ''}`}>
+                <div className={`container-arrow-item ${isActive ? 'active' : ''}`}>
                     <p className='item-icon'><FontAwesomeIcon icon={faAngleRight} /></p>
                     <p>{title}</p>
                 </div>
             )}
             {isActive === undefined && (
-                <div className='wrapper-arrow-item-active-always'>
+                <div className='container-arrow-item-active-always'>
                     <p className='item-icon'><FontAwesomeIcon icon={faAngleRight} /></p>
                     <p>{title}</p>
                 </div>

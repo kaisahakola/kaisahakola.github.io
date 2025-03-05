@@ -5,8 +5,14 @@
     margin-right: 5px;
 }
 
-.wrapper-arrow-item, .wrapper-arrow-item-active-always {
+.wrapper-arrow-items {
+    align-items: center;
+    justify-content: center;
+}
+
+.container-arrow-item, .container-arrow-item-active-always {
     display: flex;
+    align-items: center;
 
     p {
         font-family: $font-family-secondary;
@@ -17,7 +23,7 @@
     }
 }
 
-.wrapper-arrow-item {
+.container-arrow-item {
     color: $font-color-non-active;
 
     p {
@@ -25,12 +31,12 @@
     }
 }
 
-.wrapper-arrow-item.active {
+.container-arrow-item.active {
     color: $font-color-active;
 }
 
 @media screen and (min-width: $breakpoint-s) {
-    .wrapper-arrow-item, .wrapper-arrow-item-active-always {
+    .container-arrow-item, .container-arrow-item-active-always {
         p {
             font-size: $font-size-s;
         }
