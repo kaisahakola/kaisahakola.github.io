@@ -1,11 +1,11 @@
 import "./App.scss";
-import MainPage from "./pages/mainPage/MainPage.tsx";
-import ProjectsPage from "./pages/projectsPage/ProjectsPage.tsx";
-import AboutMePage from "./pages/aboutMe/AboutMePage";
-import Navigation from "./components/Navbar/Navigation";
+import MainPage from "./components/mainPage/Page/MainPage.tsx.tsx";
+import ProjectsPage from "./components/projects/Page/ProjectsPage.tsx";
+import AboutMePage from "./components/aboutMe/Page/AboutMePage.tsx";
+import Navigation from "./components/shared/Navbar/Navigation.tsx";
 import { Route, Routes } from "react-router-dom";
-import ContactsPage from "./pages/contactPage/ContactPage.tsx";
-import Footer from "./components/Footer/Footer.tsx";
+import ContactsPage from "./components/contacts/Page/ContactPage.tsx";
+import Footer from "./components/shared/Footer/Footer.tsx";
 
 function App() {
   return (

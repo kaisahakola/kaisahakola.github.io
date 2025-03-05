@@ -1,0 +1,29 @@
+@import "@/common/styles/_variables.scss";
+
+.wrapper-link-with-icon, .wrapper-text-with-icon {
+    margin-right: 10px;
+
+    img {
+        height: 25px;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    a {
+        color: $font-color-primary;
+        text-decoration: none;
+        text-align: center;
+
+        &:hover {
+            color: $font-color-non-active;
+        }
+    }
+}
+
+.wrapper-link-with-icon {
+    img {
+        &:hover {
+            opacity: 50%;
+        }
+    }
+}
