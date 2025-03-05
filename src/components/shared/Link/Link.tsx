@@ -3,7 +3,7 @@ import './Link.scss';
 interface LinkProps {
     text: string;
     url: string;
-    isExternal: boolean;
+    isExternal?: boolean;
 }
 
 const Link = ({ text, url, isExternal }: LinkProps) => {
