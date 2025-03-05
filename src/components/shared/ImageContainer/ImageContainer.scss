@@ -1,0 +1,48 @@
+@import "@/common/styles/_variables.scss";
+
+.wrapper-image-container {
+    img {
+        border-radius: $border-radius-s;
+    }
+    .mobile {
+        margin-right: 10px;
+
+        img {
+            height: 300px;
+            width: auto;
+        }
+    }
+
+    .desktop {
+        img {
+            width: 90%;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-s) {
+    .wrapper-image-container {
+        .mobile {
+            margin-right: 15px;
+    
+            img {
+                height: 400px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-m) {
+    .wrapper-image-container {
+        .mobile {
+            margin-right: 20px;
+    
+            img {
+                height: 500px;
+                width: auto;
+            }
+        }
+    }
+}

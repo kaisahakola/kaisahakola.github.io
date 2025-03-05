@@ -1,0 +1,41 @@
+@import "@/common/styles/_variables.scss";
+
+.wrapper-main-page {
+    text-align: center;
+    margin-top: 10%;
+    height: 90vh;
+
+    img {
+        height: 200px;
+        width: auto;
+        border-radius: $border-radius-xl;
+        margin-top: 30px;
+        animation: fade 2s;
+    }
+}
+
+@media screen and (min-width: $breakpoint-s) {
+    .wrapper-main-page {
+        margin-top: 25%;
+
+        img {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-m) {
+    .wrapper-main-page {
+        text-align: left;
+        margin-top: 10%;
+        padding-left: 10rem;
+        display: flex;
+
+        img {
+            height: 250px;
+            width: auto;
+            border-radius: $border-radius-xxl;
+            margin: 0 auto;
+        }
+    }
+}
