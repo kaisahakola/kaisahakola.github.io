@@ -1,7 +1,8 @@
-@import "@/shared/styles/_variables.scss";
+@import "@/common/styles/_variables.scss";
 
 body {
     background-color: $background-shade-3;
     height: 100vh;
     font-family: $font-family-primary;
+    box-sizing: border-box;
 }
