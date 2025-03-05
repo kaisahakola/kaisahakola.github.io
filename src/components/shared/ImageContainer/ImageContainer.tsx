@@ -1,5 +1,5 @@
 import './ImageContainer.scss';
-import { ImageType } from '../../shared/types/ProjectTypes';
+import { ImageType } from '../../../common/types/ProjectTypes';
 
 interface ImageProps {
     url: string;
