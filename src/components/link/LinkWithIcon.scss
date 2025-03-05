@@ -1,6 +1,6 @@
 @import "@/shared/styles/_variables.scss";
 
-.wrapper-link-with-icon {
+.wrapper-link-with-icon, .wrapper-text-with-icon {
     margin-right: 10px;
 
     img {
@@ -16,6 +16,14 @@
 
         &:hover {
             color: $font-color-non-active;
+        }
+    }
+}
+
+.wrapper-link-with-icon {
+    img {
+        &:hover {
+            opacity: 50%;
         }
     }
 }

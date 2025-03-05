@@ -1,5 +1,5 @@
 import { ProjectItem } from "../../shared/types/ProjectTypes";
-import LinkWithIcon from "../link/LinkWithIcon";
+import LinkOrTextWithIcon from "../link/LinkOrTextWithIcon";
 import "./Project.scss";
 import ImageContainer from "../ImageContainer/ImageContainer";
 import Container from "../Container/Container";
@@ -19,7 +19,7 @@ const Project = (props: ProjectProps) => {
           <div className="link-container">
             {projectInfo.links.map((link, index) => (
               <div key={index}>
-                <LinkWithIcon 
+                <LinkOrTextWithIcon 
                   url={link.url} 
                   iconType={link.url.includes("github") ? "github" : "web"} 
                   text={link.text} />

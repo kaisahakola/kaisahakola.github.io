@@ -3,6 +3,7 @@
 .wrapper-main-page {
     text-align: center;
     margin-top: 10%;
+    height: 90vh;
 
     img {
         height: 200px;
@@ -31,10 +32,10 @@
         display: flex;
 
         img {
-            margin: auto;
-            height: 300px;
+            height: 250px;
             width: auto;
             border-radius: $border-radius-xxl;
+            margin: 0 auto;
         }
     }
 }

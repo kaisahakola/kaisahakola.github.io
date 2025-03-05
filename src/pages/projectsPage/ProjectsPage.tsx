@@ -1,5 +1,6 @@
 import SecondaryHeader from "../../components/secondaryHeader/SecondaryHeader";
 import ProjectList from "../../components/projects/ProjectList";
+import "./ProjectsPage.scss";
 
 interface ProjectsPageprops {
     title: string;

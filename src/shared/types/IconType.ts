@@ -1,1 +1,1 @@
-export type IconType = "web" | "github" | "linkedin";
+export type IconType = "web" | "github" | "linkedin" | "email";

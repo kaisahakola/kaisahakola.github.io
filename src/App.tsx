@@ -5,6 +5,7 @@ import AboutMePage from "./pages/aboutMe/AboutMePage";
 import Navigation from "./components/Navbar/Navigation";
 import { Route, Routes } from "react-router-dom";
 import ContactsPage from "./pages/contactPage/ContactPage.tsx";
+import Footer from "./components/Footer/Footer.tsx";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/projects" element={<ProjectsPage title="Projects" />} />
         <Route path="/contacts" element={<ContactsPage title='Contacts' />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 }
