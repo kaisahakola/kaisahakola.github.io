@@ -3,7 +3,7 @@
 .wrapper-footer {
     background-color: $background-shade-5;
     border-top: 2px solid $background-shade-1;
-    height: 50vh;
+    height: $footer-height-mobile;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: min-content min-content;
@@ -48,7 +48,7 @@
     .wrapper-footer {
         display: flex;
         gap: 5%;
-        height: 30vh;
+        height: $footer-height-tablet;
         padding-top: 0;
     }
 
@@ -63,6 +63,6 @@
 @media screen and (min-width: $breakpoint-m) {
     .wrapper-footer {
         gap: 10%;
-        height: 40vh;
+        height: $footer-height-desktop;
     }
 }
