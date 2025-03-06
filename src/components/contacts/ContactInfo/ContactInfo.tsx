@@ -19,13 +19,13 @@ const Contacts = (props: ContactInfoProps) => {
         <div className="contact-info">
             <ArrowItem title="GitHub: " /> 
             <div className="space">
-                <Link text={github} url={`https://${github}`} />
+                <Link text={github} url={`https://${github}`} isExternal={true} />
             </div>
         </div>
         <div className="contact-info">
             <ArrowItem title="LinkedIn: " />
             <div className="space">
-                <Link text={linkedIn} url={`https://${linkedIn}`} />
+                <Link text={linkedIn} url={`https://${linkedIn}`} isExternal={true} />
             </div>
         </div>
     </div>
