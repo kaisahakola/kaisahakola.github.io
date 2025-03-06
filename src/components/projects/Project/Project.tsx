@@ -22,7 +22,8 @@ const Project = (props: ProjectProps) => {
                 <LinkOrTextWithIcon 
                   url={link.url} 
                   iconType={link.url.includes("github") ? "github" : "web"} 
-                  text={link.text} />
+                  text={link.text}
+                  isExternal={true} />
               </div>
             ))}
           </div>
