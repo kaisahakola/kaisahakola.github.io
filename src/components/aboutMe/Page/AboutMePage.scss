@@ -1,3 +1,18 @@
+@import "@/common/styles/_variables.scss";
+
 .wrapper-about-me-page {
-    height: 90vh;
+    min-height: 100%;
+    margin-bottom: 60%;
+}
+
+@media screen and (min-width: $breakpoint-s) {
+    .wrapper-about-me-page {
+        margin-bottom: 70%;
+    }
+}
+
+@media screen and (min-width: $breakpoint-m) {
+    .wrapper-about-me-page {
+        margin-bottom: 30%;
+    }
 }
