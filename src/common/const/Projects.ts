@@ -5,6 +5,7 @@ import HockeySS from "../../assets/images/naiskiekko-ss.png";
 import Android from "../../assets/images/android-ss.png";
 import Ios from "../../assets/images/ios-ss.png";
 import AltZoneGallery from "../../assets/images/altzone-gallery.png";
+import SpeedTestSS from "../../assets/images/speed-test.png";
 
 export const WildHerb: ProjectItem = {
     title: "Wild Herb Adventure!",
@@ -56,5 +57,19 @@ export const AltZone: ProjectItem = {
     description: "This is a volunteer-driven website development project, and you can find more information about it through the link above. I began working on this project last fall and was promoted to Lead Web Developer in January. In my role, I am responsible for developing the website, conducting code reviews, and managing issue tracking. Stepping out of my comfort zone by accepting the invitation to join the leadership team has been incredibly rewarding. This experience has provided valuable opportunities for growth, and I have significantly enhanced my skills in modern web development.",
     images: [
         {url: AltZoneGallery, width: "2862px", height: "1372px", type: "desktop"}
+    ]
+} as const
+
+export const SpeedTestGame: ProjectItem = {
+    title: "Speed Test Game",
+    links: [
+        {url: "https://github.com/kaisahakola/speed-test", text: "speed-test"},
+        {url: "https://speedtestgame.netlify.app/", text: "Netlify domain of the game"}
+    ],
+    technologies: ["TypeScript", "React", "Firebase", "Netlify", "CSS"],
+    myRole: "Project creator",
+    description: "I made this game as a fun and simple example of my skills for my graduation party guests. As React and JavaScript/TypeScript have become very familiar to me, I found them to be the best technologies to use to make something simple in a short time period. I created a small Firebase Firestore database where the high score of all attempts would be saved. As of now the game does not work in mobile/tablet devices since the game does not detect tapping of the screen as a valid way to score. The game was originally developed to only be played with a keyboard.",
+    images: [
+        {url: SpeedTestSS, width: "2540px", height: "1264px", type: "desktop"}
     ]
 } as const
