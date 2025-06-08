@@ -1,9 +1,12 @@
 import Project from "../Project/Project";
 import './ProjectList.scss'
-import { WildHerb } from "../../../common/const/Projects";
-import { Hockey } from "../../../common/const/Projects";
-import { AndroidAndIos } from "../../../common/const/Projects";
-import { AltZone } from "../../../common/const/Projects";
+import {
+  WildHerb,
+  Hockey,
+  AndroidAndIos,
+  AltZone,
+  SpeedTestGame
+} from "../../../common/const/Projects";
 import LayoutWithSideMenu from "../../shared/LayoutWithSideMenu/LayoutWithSideMenu";
 
 const ProjectList = () => {
@@ -16,6 +19,7 @@ const ProjectList = () => {
           <Project projectInfo={AltZone} />
           <Project projectInfo={Hockey} />
           <Project projectInfo={AndroidAndIos} />
+          <Project projectInfo={SpeedTestGame} />
       </LayoutWithSideMenu>
     </div>
   );
